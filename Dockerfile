@@ -1,8 +1,7 @@
 FROM nginx
-
-RUN apt update
-RUN apt upgrade
-RUN apt upgrade
-RUN apt install -y net-tools
-RUN apt install -y iputils-ping
-RUN apt install -y telnet
+# RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
+RUN apt-get update
+RUN apt-get upgrade
+RUN apt-get install -y telnet
+RUN apt-get install -y iputils-ping
+RUN apt-get install -y net-tools
