@@ -9,3 +9,4 @@ RUN apt-get install -y vim
 RUN apt-get install -y curl
 RUN apt-get install -y tzdata
 RUN ln -fs /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+ENV TZ=Asia/Taipei
